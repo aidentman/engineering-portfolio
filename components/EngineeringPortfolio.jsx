@@ -10,9 +10,9 @@ const EngineeringPortfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "Autonomous Drone System",
+      title: "2023 FIRST Robotics Competion (Charged Up)",
       category: "Robotics",
-      description: "Designed and implemented control systems for an autonomous drone capable of navigating complex environments using computer vision.",
+      description: "Designed and manufactured the gripping mechanism for the 2023 FIRST Robotics Competition robot.",
       fullDescription: "This project involved designing and implementing a complete control system for an autonomous drone platform. The system utilizes computer vision algorithms to identify and navigate around obstacles in real-time. I developed custom PID controllers for stabilization and created an efficient path-planning algorithm that reduced navigation time by 35% compared to conventional approaches. The project required extensive knowledge of control theory, embedded systems programming, and 3D spatial reasoning.",
       images: ["/api/placeholder/400/300", "/api/placeholder/400/300"],
       documents: ["Drone System Architecture.pdf", "Control Algorithm Documentation.pdf"],
@@ -20,23 +20,33 @@ const EngineeringPortfolio = () => {
     },
     {
       id: 2,
-      title: "Solar-Powered Water Purification System",
-      category: "Sustainable Engineering",
-      description: "Developed a compact solar-powered water purification system for remote locations with limited access to clean water and electricity.",
-      fullDescription: "This project addressed the critical need for clean water in remote locations with limited infrastructure. I engineered a compact, solar-powered water purification system that combines filtration, UV sterilization, and a novel energy storage solution. The system can purify up to 50 gallons of water daily while operating entirely off-grid. Key innovations include a custom-designed energy management system that optimizes power usage based on available sunlight and water processing requirements. The final design achieved a 40% reduction in manufacturing cost compared to commercial alternatives while maintaining comparable performance metrics.",
+      title: "2022 FIRST Robotics Competition (Rapid React)",
+      category: "Robotics",
+      description: "Designed an manufactured the indexing mechanism for the 2022 FIRST Robotics Competition robot.",
+      fullDescription: "I led a small group through the brainstorm, prototype, design, manufacture, assembly, and revision process for the 2022 FRC Robot. Armed with color sensors to detect the game piece, custom rollers and spacing for traction and proper vertical feeding into the shooter, ",
       images: ["/api/placeholder/400/300", "/api/placeholder/400/300"],
       documents: ["Water Purification System Specs.pdf", "Field Test Results.pdf"],
       cadFiles: ["purification_assembly.step", "solar_panel_mount.stp"]
     },
     {
       id: 3,
-      title: "Smart Building HVAC Optimization",
-      category: "Energy Systems",
-      description: "Created a machine learning model to optimize HVAC systems in commercial buildings, reducing energy consumption by 23%.",
-      fullDescription: "I developed an intelligent HVAC optimization system for commercial buildings that reduced energy consumption by 23% while maintaining occupant comfort. The system uses a network of IoT sensors to monitor environmental conditions throughout a building in real-time. I created a custom machine learning algorithm that predicts optimal temperature settings based on occupancy patterns, weather forecasts, and historical performance data. The system includes a user-friendly dashboard for facility managers and integrates with existing building management systems through a flexible API. Implementation in a 10-story office building demonstrated annual energy savings of approximately $42,000.",
+      title: "Machine Shop Training (Milling Machine)",
+      category: "Manufacture",
+      description: "Designed and implemented a milling machine training program for members of the Gunn Robotics Team.",
+      fullDescription: "Over the 2022-2023 academic year, I acted as Mill Lead for the Gunn Robotics Team. I personally designed and instructed a mill operation curriculum, teaching team members how to operate the machine safely and efficiently, supervising and advising use. I also designed “replication parts” assignments for students to exercise these manufacturing skills.",
       images: ["/api/placeholder/400/300", "/api/placeholder/400/300"],
-      documents: ["HVAC System Architecture.pdf", "Energy Savings Report.pdf"],
+      documents: ["Mill Training Doc.pdf", "Mill Training Worksheet.pdf", "Mill Training Answer Key.pdf"],
       cadFiles: ["sensor_housing.step", "control_panel.stp"]
+    },
+    {
+    id: 4,
+    title: "Trumpet Project",
+    category: "Robotics",
+    description: "Created a machine learning model to optimize HVAC systems in commercial buildings, reducing energy consumption by 23%.",
+    fullDescription: "I developed an intelligent HVAC optimization system for commercial buildings that reduced energy consumption by 23% while maintaining occupant comfort. The system uses a network of IoT sensors to monitor environmental conditions throughout a building in real-time. I created a custom machine learning algorithm that predicts optimal temperature settings based on occupancy patterns, weather forecasts, and historical performance data. The system includes a user-friendly dashboard for facility managers and integrates with existing building management systems through a flexible API. Implementation in a 10-story office building demonstrated annual energy savings of approximately $42,000.",
+    images: ["/api/placeholder/400/300", "/api/placeholder/400/300"],
+    documents: ["HVAC System Architecture.pdf", "Energy Savings Report.pdf"],
+    cadFiles: ["sensor_housing.step", "control_panel.stp"]
     }
   ];
   
@@ -44,19 +54,19 @@ const EngineeringPortfolio = () => {
   const aboutContent = {
     name: "Aiden Man",
     title: "Mechanical Engineer & Systems Designer",
-    bio: "I'm a mechanical engineer with 8+ years of experience specializing in sustainable systems design and robotics. My work focuses on creating innovative solutions to complex engineering challenges with an emphasis on energy efficiency and environmental impact.",
+    bio: "I'm an undergraduate student studying mechanical engineering at Foothill College. I am particularly interest in robotics, manufacture and materials.",
     education: [
-      "M.S. Mechanical Engineering, Stanford University",
-      "B.S. Engineering Physics, UC Berkeley"
+      "B.S. Somewhere"
     ],
     skills: [
-      "Mechanical Design", "CAD/CAM", "Prototyping", 
-      "Thermal Analysis", "Fluid Dynamics", "Control Systems",
-      "Python", "MATLAB", "SolidWorks", "Fusion 360"
+      "Mechanical Design", "CAD", "Prototyping", 
+      "Ansys (FEA)", "Organizing/Leading Group Projects", "C++",
+      "Python", "MATLAB", "SolidWorks", "Onshape", 
+      "Hand Tools", "Manual Mill", "Manual Lathe"
     ],
     contact: {
-      email: "aiden@engineer-portfolio.com",
-      linkedin: "linkedin.com/in/aidenman"
+      email: "aidentman06@gmail.com",
+      linkedin: "linkedin.com/in/aiden-man-48772b291"
     }
   };
   
@@ -114,8 +124,8 @@ const EngineeringPortfolio = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="md:flex">
                 <div className="md:w-1/2 bg-indigo-700 text-white p-8 flex flex-col justify-center">
-                  <h2 className="text-4xl font-bold mb-4">Engineering Solutions for Complex Problems</h2>
-                  <p className="text-lg mb-6">Welcome to my portfolio showcasing innovative engineering projects across robotics, sustainable systems, and energy optimization.</p>
+                  <h2 className="text-4xl font-bold mb-4">Design. Build. Innovate.</h2>
+                  <p className="text-lg mb-6">Welcome to my portfolio showcasing various engineering projects I was involved in.</p>
                   <button 
                     className="bg-white text-indigo-700 px-6 py-2 rounded-lg font-medium w-fit hover:bg-gray-100 transition"
                     onClick={() => handleTabChange('projects')}
@@ -366,7 +376,7 @@ const EngineeringPortfolio = () => {
           <div className="md:flex md:justify-between items-center">
             <div className="mb-6 md:mb-0">
               <h2 className="text-2xl font-bold">Aiden Man</h2>
-              <p className="mt-2 text-gray-400">Engineering solutions for complex problems</p>
+              <p className="mt-2 text-gray-400">Design. Build. Innovate.</p>
             </div>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-400 hover:text-white">
