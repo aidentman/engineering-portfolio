@@ -107,7 +107,7 @@ const EngineeringPortfolio = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Navigation */}
-      <nav className="bg-blue-800 text-white p-4">
+      <nav className="bg-red-900 text-white p-4">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold">
            <button 
@@ -153,11 +153,11 @@ const EngineeringPortfolio = () => {
           <div className="space-y-8">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="md:flex">
-                <div className="md:w-1/2 bg-blue-700 text-white p-8 flex flex-col justify-center">
+                <div className="md:w-1/2 bg-red-700 text-white p-8 flex flex-col justify-center">
                   <h2 className="text-4xl font-bold mb-4">Design. Build. Innovate.</h2>
                   <p className="text-lg mb-6">Welcome to my portfolio showcasing various engineering projects I was involved in.</p>
                   <button 
-                    className="bg-white text-blue-700 px-6 py-2 rounded-lg font-medium w-fit hover:bg-gray-100 transition"
+                    className="bg-white text-red-800 px-6 py-2 rounded-lg font-medium w-fit hover:bg-gray-100 transition"
                     onClick={() => handleTabChange('projects')}
                   >
                     View My Work
@@ -182,13 +182,13 @@ const EngineeringPortfolio = () => {
                     className="w-full h-48 object-cover" 
                   />
                   <div className="p-4">
-                    <span className="text-xs font-semibold bg-blue-100 text-blue-800 px-2 py-1 rounded">
+                    <span className="text-xs font-semibold bg-red-100 text-red-700 px-2 py-1 rounded">
                       {project.category}
                     </span>
                     <h3 className="text-xl font-bold mt-2">{project.title}</h3>
                     <p className="text-gray-600 mt-2">{project.description}</p>
                     <button 
-                      className="mt-4 text-blue-600 font-medium hover:text-blue-800"
+                      className="mt-4 text-red-700 font-medium hover:text-red-800"
                       onClick={() => {
                         handleTabChange('projects');
                         setTimeout(() => toggleProject(project.id), 100);
@@ -213,13 +213,13 @@ const EngineeringPortfolio = () => {
                 <div className="p-6">
                   <div className="flex justify-between items-start">
                     <div>
-                      <span className="text-xs font-semibold bg-blue-100 text-blue-800 px-2 py-1 rounded">
+                      <span className="text-xs font-semibold bg-red-100 text-red-700 px-2 py-1 rounded">
                         {project.category}
                       </span>
                       <h3 className="text-2xl font-bold mt-2">{project.title}</h3>
                     </div>
                     <button 
-                      className="bg-blue-100 text-blue-800 p-2 rounded hover:bg-blue-200"
+                      className="bg-red-100 text-red-700 p-2 rounded hover:bg-red-200"
                       onClick={() => toggleProject(project.id)}
                     >
                       {expandedProject === project.id ? 'Collapse' : 'Expand'}
@@ -276,7 +276,7 @@ const EngineeringPortfolio = () => {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                           {project.documents.map((doc, index) => (
                             <div key={index} className="bg-gray-100 p-4 rounded flex items-center">
-                              <svg className="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="w-6 h-6 text-red-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
                               </svg>
                                 <span>
@@ -297,7 +297,7 @@ const EngineeringPortfolio = () => {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                           {project.cadFiles.map((cad, index) => (
                             <div key={index} className="bg-gray-100 p-4 rounded flex items-center">
-                              <svg className="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="w-6 h-6 text-red-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                               </svg>
                               <span>
@@ -323,9 +323,9 @@ const EngineeringPortfolio = () => {
           <div className="bg-white rounded-lg shadow-lg p-8">
             <div className="md:flex">
               <div className="md:w-1/3 mb-6 md:mb-0">
-                <div className="rounded-full overflow-hidden w-48 h-48 mx-auto border-4 border-blue-200">
+                <div className="rounded-full overflow-hidden w-48 h-48 mx-auto border-4 border-red-300">
                   <img 
-                    src="/images/profile_picture.jpg" 
+                    src="/images/Profile_Picture.jpg" 
                     alt="Profile" 
                     className="w-full h-full object-cover" 
                   />
@@ -333,7 +333,7 @@ const EngineeringPortfolio = () => {
               </div>
               <div className="md:w-2/3">
                 <h2 className="text-3xl font-bold text-gray-800">{aboutContent.name}</h2>
-                <h3 className="text-xl text-blue-600 mb-4">{aboutContent.title}</h3>
+                <h3 className="text-xl text-red-700 mb-4">{aboutContent.title}</h3>
                 <p className="text-gray-700 mb-6">{aboutContent.bio}</p>
                 
                 <div className="mb-6">
@@ -372,22 +372,22 @@ const EngineeringPortfolio = () => {
                 </p>
                 
                 <div className="flex items-center mb-3 text-gray-700">
-                  <svg className="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-6 h-6 text-red-700 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                   </svg>
                   <span>
-                    <a href={`mailto:${aboutContent.contact.email}`}>
+                    <a href={`mailto:${aboutContent.contact.email}`} className="hover:text-red-700">
                     {aboutContent.contact.email}
                     </a>
                   </span>
                 </div>
                 
                 <div className="flex items-center text-gray-700">
-                  <svg className="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-6 h-6 text-red-700 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                   </svg>
                   <span>
-                    <a href={aboutContent.contact.linkedin} target="_blank" rel="noopener noreferrer">
+                    <a href={aboutContent.contact.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-red-700">
                       LinkedIn Profile
                     </a>
                   </span>
@@ -401,7 +401,7 @@ const EngineeringPortfolio = () => {
                     <input
                       type="text"
                       id="name"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300"
                       placeholder="Your name"
                     />
                   </div>
@@ -410,7 +410,7 @@ const EngineeringPortfolio = () => {
                     <input
                       type="email"
                       id="email"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300"
                       placeholder="Your email"
                     />
                   </div>
@@ -421,7 +421,7 @@ const EngineeringPortfolio = () => {
                   <input
                     type="text"
                     id="subject"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300"
                     placeholder="Subject"
                   />
                 </div>
@@ -431,12 +431,12 @@ const EngineeringPortfolio = () => {
                   <textarea
                     id="message"
                     rows="4"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300"
                     placeholder="Your message"
                   ></textarea>
                 </div>
                 
-                <button type="submit" className="bg-blue-700 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-800 transition">
+                <button type="submit" className="bg-red-700 text-white px-6 py-3 rounded-md font-medium hover:bg-red-800 transition">
                   Send Message
                 </button>
               </form>
