@@ -15,7 +15,7 @@ const EngineeringPortfolio = () => {
       description: "Designed and manufactured the gripper mechanism for the 2023 FIRST Robotics Competition robot.",
       fullDescription: "Leading a small design team, I worked on the development of the gripper mechanism for the 2023 FIRST Robotics Competition robot. Our design features an aluminum frame, an imbedded color sensor for detecting the game piece type, combination of compliant wheels and compliant stars for fast intake, a constant-force spring for passive gripping, a driving motor to increase gripping compression, and a seated camera for driver alignment and control.",
       images: ["VERMILION_Front.jpg", "VERMILION.png"],
-      videos: ["VERMILION_Gripper_Test.MOV", "VERMILION_Drive_Test.MOV"],
+      videos: ["VERMILION_Gripper_Test.mov", "VERMILION_Drive_Test.MOV"],
       documents: ["GRT_2023_Technical_Binder.pdf", "GRT_2023_Impact_Booklet.pdf"],
       // cadFiles: ["GRT_2023_Full_Robot_Assembly.step", "GRT_2023_Gripper_Assembly.step"]
     },
