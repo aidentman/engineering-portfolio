@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import ContactForm from '@/components/contact-form';
 
 const EngineeringPortfolio = () => {
   const [activeTab, setActiveTab] = useState('home');
@@ -394,52 +395,7 @@ const EngineeringPortfolio = () => {
                 </div>
               </div>
               
-              <form className="space-y-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                    <input
-                      type="text"
-                      id="name"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300"
-                      placeholder="Your name"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                    <input
-                      type="email"
-                      id="email"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300"
-                      placeholder="Your email"
-                    />
-                  </div>
-                </div>
-                
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">Subject</label>
-                  <input
-                    type="text"
-                    id="subject"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300"
-                    placeholder="Subject"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                  <textarea
-                    id="message"
-                    rows="4"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-300"
-                    placeholder="Your message"
-                  ></textarea>
-                </div>
-                
-                <button type="submit" className="bg-red-700 text-white px-6 py-3 rounded-md font-medium hover:bg-red-800 transition">
-                  Send Message
-                </button>
-              </form>
+              <ContactForm />
             </div>
           </div>
         )}
