@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { toast } from 'sonner'; // Assuming you're using Sonner for notifications
 
 const ContactForm = () => {
@@ -11,7 +11,7 @@ const ContactForm = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value } = e.target;
     setFormData(prevState => ({
       ...prevState,
@@ -45,7 +45,7 @@ const ContactForm = () => {
     return true;
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     // Validate form before submission
@@ -68,7 +68,7 @@ const ContactForm = () => {
         throw new Error('Network response was not ok');
       }
 
-      const result = await response.json();
+//      const result = await response.json();
       
       // Success notification
       toast.success('Message sent successfully!');
