@@ -10,10 +10,10 @@ const EngineeringPortfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "2023 FIRST Robotics Competion (Charged Up)",
+      title: "2023 FIRST Robotics Competition (Charged Up)",
       category: "Robotics",
       description: "Designed and manufactured the gripper mechanism for the 2023 FIRST Robotics Competition robot.",
-      fullDescription: "Leading a small design team, I worked on the development of the gripper mechanism for the 2023 FIRST Robotics Competition robot. Our design features an aluminum frame, an imbedded color sensor for detecting the game piece type, combination of compliant wheels and compliant stars for fast intake, a constant-force spring for passive gripping, a driving motor to increase gripping compression, and a seated camera for driver alignment and control.",
+      fullDescription: "Leading a small design team, I worked on the development of the gripper mechanism for the 2023 FIRST Robotics Competition robot. Our design features an aluminum frame, an imbedded color sensor for detecting the game piece type, a combination of compliant wheels and compliant stars for fast intake, a constant-force spring for passive gripping, a driving motor to increase gripping compression, and a seated camera for driver alignment and control.",
       images: ["VERMILION_Front.jpg", "VERMILION.png"],
       videos: ["VERMILION_Gripper_Test.mov", "VERMILION_Drive_Test.MOV"],
       documents: ["GRT_2023_Technical_Binder.pdf", "GRT_2023_Impact_Booklet.pdf"],
@@ -24,8 +24,8 @@ const EngineeringPortfolio = () => {
       title: "2022 FIRST Robotics Competition (Rapid React)",
       category: "Robotics",
       description: "Designed an manufactured the indexing mechanism for the 2022 FIRST Robotics Competition robot.",
-      fullDescription: "Leading a small design team, I worked on the development of the indexing mechanism for the 2022 FRC Robot. Our design features an aluminum frame, color sensors to detect the color and location of game pieces, custom roughtop rollers, polycarbonate walls, and well-adjusted compression for consistent vertical feeding into the shooter.",
-      images: ["DAEDALUS_Side.jpg", "DAEDALUS_Full_Robot_CAD.png", "DAEDALUS_Internals_CAD.png", "DAEDALUS_Index.jpg"],
+      fullDescription: "Leading a small design team, I worked on the development of the indexing mechanism for the 2022 First Robotics Competition Robot. Our design features an aluminum frame, color sensors to detect the index location of game pieces, custom roughtop rollers, polycarbonate walls, and callibrated compression for consistent vertical feeding.",
+      images: ["DAEDALUS_2.jpg", "DAEDALUS_3.jpg", "DAEDALUS_4.jpg", "DAEDALUS_6.jpg", "DAEDALUS_1.jpg", "DAEDALUS_5.jpg", "DAEDALUS_Full_Robot_CAD.png","DAEDALUS_Internals_CAD.png"],
       videos: ["DAEDALUS_Index.MOV"],
       documents: [],
       // cadFiles: ["GRT_2022_Full_Robot_Assembly.step", "GRT_2022_Internals_Assembly.step"]
@@ -33,9 +33,9 @@ const EngineeringPortfolio = () => {
     {
       id: 3,
       title: "Senior Floats",
-      category: "Robotics",
-      description: "Designed and manufactured the structure of the ",
-      fullDescription: "I worked with 2023 senior class to design, manufacture, and assemble a wood replica of the Apollo 11 Lunar Lander Module. ",
+      category: "Wood Working",
+      description: "Designed, manufactured, and assembled a wood replica of the Apollo 11 Lunar Lander Module for Homecoming. ",
+      fullDescription: "I worked with the Gunn 2023 Senior Class to design, manufacture, and assemble a wood replica of the Apollo 11 Lunar Lander Module for our annual Homecoming Competition. ",
       images: ["FLOATS_Bottom.jpg", "FLOATS_Top.jpg", "FLOATS_Cool.jpg", "FLOATS_CAD.png", "FLOATS_CAD_COMP.png",  "FLOATS_Salute.jpg"],
       videos: ["FLOATS_Hatch.mp4", "FLOATS_Smoke.mp4"],
       documents: [],
@@ -57,7 +57,7 @@ const EngineeringPortfolio = () => {
       title: "Trumpet Project",
       category: "Robotics",
       description: "Manufactured a trumpet-playing prosthesis.",
-      fullDescription: "I manufactured and assembled the final iteration of the trumpet-playing prosthesis, designed by the previous Gunn Robotics Team.",
+      fullDescription: "I manufactured and assembled the final iteration of the trumpet-playing prosthesis, finalized by the previous design team.",
       images: [],
       videos: [],
       documents: ["Trumpet_Mechanism_Guide.pdf"],
@@ -107,7 +107,7 @@ const EngineeringPortfolio = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Navigation */}
-      <nav className="bg-red-900 text-white p-4">
+      <nav className="bg-red-800 text-white p-4">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold">
            <button 
@@ -153,11 +153,11 @@ const EngineeringPortfolio = () => {
           <div className="space-y-8">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="md:flex">
-                <div className="md:w-1/2 bg-red-700 text-white p-8 flex flex-col justify-center">
+                <div className="md:w-1/2 bg-red-800 text-white p-8 flex flex-col justify-center">
                   <h2 className="text-4xl font-bold mb-4">Design. Build. Innovate.</h2>
                   <p className="text-lg mb-6">Welcome to my portfolio showcasing various engineering projects I was involved in.</p>
                   <button 
-                    className="bg-white text-red-800 px-6 py-2 rounded-lg font-medium w-fit hover:bg-gray-100 transition"
+                    className="bg-white text-red-700 px-6 py-2 rounded-lg font-medium w-fit hover:bg-gray-100 transition"
                     onClick={() => handleTabChange('projects')}
                   >
                     View My Work
