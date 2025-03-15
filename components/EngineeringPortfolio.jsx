@@ -11,6 +11,17 @@ const EngineeringPortfolio = () => {
   const projects = [
     {
       id: 1,
+      title: "In Progress: CNC Router",
+      category: "Manufacture",
+      description: "Designing and assembling a CNC Router from scratch.",
+      fullDescription: "Working with a small design team towards creating a fully functional CNC router from scratch.",
+      images: ["CNC_Top.png", "CNC_Front.png", "CNC_Extrusions.jpg"],
+      // videos: ["VERMILION_Gripper_Test.mov", "VERMILION_Drive_Test.MOV"],
+      // documents: ["GRT_2023_Technical_Binder.pdf", "GRT_2023_Impact_Booklet.pdf"],
+      // cadFiles: ["GRT_2023_Full_Robot_Assembly.step", "GRT_2023_Gripper_Assembly.step"]
+    },
+    {
+      id: 2,
       title: "2023 FIRST Robotics Competition (Charged Up)",
       category: "Robotics",
       description: "Designed and manufactured the gripper mechanism for the 2023 FIRST Robotics Competition robot.",
@@ -21,7 +32,7 @@ const EngineeringPortfolio = () => {
       // cadFiles: ["GRT_2023_Full_Robot_Assembly.step", "GRT_2023_Gripper_Assembly.step"]
     },
     {
-      id: 2,
+      id: 3,
       title: "2022 FIRST Robotics Competition (Rapid React)",
       category: "Robotics",
       description: "Designed an manufactured the indexing mechanism for the 2022 FIRST Robotics Competition robot.",
@@ -32,7 +43,7 @@ const EngineeringPortfolio = () => {
       // cadFiles: ["GRT_2022_Full_Robot_Assembly.step", "GRT_2022_Internals_Assembly.step"]
     },
     {
-      id: 3,
+      id: 4,
       title: "Senior Floats",
       category: "Wood Working",
       description: "Designed, manufactured, and assembled a wood replica of the Apollo 11 Lunar Lander Module for Homecoming. ",
@@ -43,7 +54,7 @@ const EngineeringPortfolio = () => {
       cadFiles: []
     }, 
     {
-      id: 4,
+      id: 5,
       title: "Machine Shop Training (Milling Machine)",
       category: "Manufacture",
       description: "Designed and implemented a milling machine training program for members of the Gunn Robotics Team.",
@@ -54,7 +65,7 @@ const EngineeringPortfolio = () => {
       cadFiles: []
     },
     {
-      id: 5,
+      id: 6,
       title: "Trumpet Project",
       category: "Robotics",
       description: "Manufactured a trumpet-playing prosthesis.",
@@ -72,7 +83,7 @@ const EngineeringPortfolio = () => {
     title: "Mechanical Engineer",
     bio: "I'm an undergraduate student studying mechanical engineering at Foothill College. I am particularly interest in robotics, manufacture and materials.",
     education: [
-      "B.S. Anywhere That Will Take Me"
+      "Currently studying at Foothill College"
     ],
     skills: [
       "Mechanical Design", "CAD", "Prototyping", 
@@ -326,7 +337,7 @@ const EngineeringPortfolio = () => {
               <div className="md:w-1/3 mb-6 md:mb-0">
                 <div className="rounded-full overflow-hidden w-48 h-48 mx-auto border-4 border-red-300">
                   <img 
-                    src="/images/Profile_Picture.jpg" 
+                    src="/images/pfp.jpg" 
                     alt="Profile" 
                     className="w-full h-full object-cover" 
                   />
