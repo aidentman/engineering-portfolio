@@ -11,17 +11,28 @@ const EngineeringPortfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "In Progress: CNC Router",
-      category: "Manufacture",
-      description: "Designing and assembling a CNC Router from scratch.",
-      fullDescription: "Working with a small design team towards creating a fully functional CNC router from scratch.",
-      images: ["CNC_Top.png", "CNC_Front.png", "CNC_Extrusions.jpg"],
-      // videos: ["VERMILION_Gripper_Test.mov", "VERMILION_Drive_Test.MOV"],
+      title: "In Progress: UR10e Simulation Project",
+      category: "Robotics",
+      description: "Created a simulator for the UR10e (6-axis industrial robotic arm) using Simulink.",
+      fullDescription: "Created a simulator for the UR10e (6-axis industrial robotic arm) using Simulink. Connected a GameCube controller for interactive input. Derived mathematical relations to mathematically track the position and velocity ",
+      images: ["UR10_Solidworks_Assembly.png", "UR10_Specs.jpg", "UR10_Math.jpg", "UR10_All_Blocks.png", "UR10_Button_Blocks.png", "UR10_Stick_Blocks.png", "UR10_Comp_Blocks.png", "UR10_Simscape_Assembly.png", "UR10_Calibration_Script.png", "UR10_Math_Model_Script.png"],
+      videos: ["UR10_Demo.mp4"],
       // documents: ["GRT_2023_Technical_Binder.pdf", "GRT_2023_Impact_Booklet.pdf"],
       // cadFiles: ["GRT_2023_Full_Robot_Assembly.step", "GRT_2023_Gripper_Assembly.step"]
     },
     {
       id: 2,
+      title: "In Progress: CNC Router",
+      category: "Manufacture",
+      description: "Designing and assembling a CNC Router from scratch.",
+      fullDescription: "Working with a small design team towards creating a fully functional CNC router from scratch.",
+      images: ["CNC_Top.png", "CNC_Front.png", "CNC_Extrusions.jpg"],
+      // videos: [],
+      // documents: [],
+      // cadFiles: []
+    },
+    {
+      id: 3,
       title: "2023 FIRST Robotics Competition (Charged Up)",
       category: "Robotics",
       description: "Designed and manufactured the gripper mechanism for the 2023 FIRST Robotics Competition robot.",
@@ -32,7 +43,7 @@ const EngineeringPortfolio = () => {
       // cadFiles: ["GRT_2023_Full_Robot_Assembly.step", "GRT_2023_Gripper_Assembly.step"]
     },
     {
-      id: 3,
+      id: 4,
       title: "2022 FIRST Robotics Competition (Rapid React)",
       category: "Robotics",
       description: "Designed an manufactured the indexing mechanism for the 2022 FIRST Robotics Competition robot.",
@@ -43,7 +54,7 @@ const EngineeringPortfolio = () => {
       // cadFiles: ["GRT_2022_Full_Robot_Assembly.step", "GRT_2022_Internals_Assembly.step"]
     },
     {
-      id: 4,
+      id: 5,
       title: "Senior Floats",
       category: "Wood Working",
       description: "Designed, manufactured, and assembled a wood replica of the Apollo 11 Lunar Lander Module for Homecoming. ",
@@ -54,7 +65,7 @@ const EngineeringPortfolio = () => {
       cadFiles: []
     }, 
     {
-      id: 5,
+      id: 6,
       title: "Machine Shop Training (Milling Machine)",
       category: "Manufacture",
       description: "Designed and implemented a milling machine training program for members of the Gunn Robotics Team.",
@@ -65,7 +76,7 @@ const EngineeringPortfolio = () => {
       cadFiles: []
     },
     {
-      id: 6,
+      id: 7,
       title: "Trumpet Project",
       category: "Robotics",
       description: "Manufactured a trumpet-playing prosthesis.",
