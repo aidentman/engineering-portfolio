@@ -4,13 +4,18 @@ import './globals.css';
 import { DataProvider } from '@/components/DataProvider';  //Import DataProvider
 
 export const metadata = {
-  title: 'Aiden Man - Mechanical Engineer',
-  description: 'Mechanical Engineering portfolio showcasing various engineering projects',
+  title: 'Aiden Man - Engineering Portfolio',
+  description: 'This is my engineering portfolio, showcasing various engineering projects I worked on.',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      
+      <head>
+        <link rel="icon" href="/Baymax.ico" type="image/ico" />
+      </head>
+      
       <body className="min-h-screen bg-gray-100 flex flex-col">
         {/* Wrap the entire app in the DataProvider */}
         <DataProvider>  
