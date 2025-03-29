@@ -14,9 +14,9 @@ const projects = [
     description: "Designing and assembling a CNC Router from scratch.",
     fullDescription: "Working with a small design team towards creating a fully functional CNC router from scratch.",
     images: ["CNC_Top.png", "CNC_Front.png", "CNC_Extrusions.jpg"],
-    videos: ["VERMILION_Gripper_Test.mov", "VERMILION_Drive_Test.MOV"],
-    documents: ["GRT_2023_Technical_Binder.pdf", "GRT_2023_Impact_Booklet.pdf"],
-    cadFiles: ["GRT_2023_Full_Robot_Assembly.step", "GRT_2023_Gripper_Assembly.step"]
+    videos: [],
+    documents: [],
+    cadFiles: []
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const projects = [
     images: ["VERMILION_Front.jpg", "VERMILION.png"],
     videos: ["VERMILION_Gripper_Test.mov", "VERMILION_Drive_Test.MOV"],
     documents: ["GRT_2023_Technical_Binder.pdf", "GRT_2023_Impact_Booklet.pdf"],
-    cadFiles: ["GRT_2023_Full_Robot_Assembly.step", "GRT_2023_Gripper_Assembly.step"]
+    // cadFiles: ["GRT_2023_Full_Robot_Assembly.step", "GRT_2023_Gripper_Assembly.step"]
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const projects = [
     images: ["DAEDALUS_2.jpg", "DAEDALUS_3.jpg", "DAEDALUS_4.jpg", "DAEDALUS_6.jpg", "DAEDALUS_1.jpg", "DAEDALUS_5.jpg", "DAEDALUS_Full_Robot_CAD.png","DAEDALUS_Internals_CAD.png"],
     videos: ["DAEDALUS_Index.MOV"],
     documents: [],
-    cadFiles: ["GRT_2022_Full_Robot_Assembly.step", "GRT_2022_Internals_Assembly.step"]
+    // cadFiles: ["GRT_2022_Full_Robot_Assembly.step", "GRT_2022_Internals_Assembly.step"]
   },
   {
     id: 4,
