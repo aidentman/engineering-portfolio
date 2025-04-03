@@ -10,7 +10,7 @@ const EngineeringPortfolio = () => {
   // Sample portfolio data - you would replace this with your actual projects
   const projects = [
     {
-      id: 1,
+      id: 0,
       title: "In Progress: UR10e Simulation Project",
       category: "Robotics",
       description: "Created a simulator for the UR10e (6-axis industrial robotic arm) using Simulink.",
@@ -21,18 +21,18 @@ const EngineeringPortfolio = () => {
       // cadFiles: ["GRT_2023_Full_Robot_Assembly.step", "GRT_2023_Gripper_Assembly.step"]
     },
     {
-      id: 2,
+      id: 1,
       title: "In Progress: CNC Router",
       category: "Manufacture",
       description: "Designing and assembling a CNC Router from scratch.",
-      fullDescription: "Working with a small design team towards creating a fully functional CNC router from scratch.",
+      fullDescription: "Working with a small design team towards creating a fully functional CNC router from scratch. We have a mechanical design assembled in Onshape and are currently determining electrical components.",
       images: ["CNC_Top.png", "CNC_Front.png", "CNC_Extrusions.jpg"],
       // videos: [],
       // documents: [],
       // cadFiles: []
     },
     {
-      id: 3,
+      id: 2,
       title: "2023 FIRST Robotics Competition (Charged Up)",
       category: "Robotics",
       description: "Designed and manufactured the gripper mechanism for the 2023 FIRST Robotics Competition robot.",
@@ -43,7 +43,7 @@ const EngineeringPortfolio = () => {
       // cadFiles: ["GRT_2023_Full_Robot_Assembly.step", "GRT_2023_Gripper_Assembly.step"]
     },
     {
-      id: 4,
+      id: 3,
       title: "2022 FIRST Robotics Competition (Rapid React)",
       category: "Robotics",
       description: "Designed an manufactured the indexing mechanism for the 2022 FIRST Robotics Competition robot.",
@@ -54,7 +54,7 @@ const EngineeringPortfolio = () => {
       // cadFiles: ["GRT_2022_Full_Robot_Assembly.step", "GRT_2022_Internals_Assembly.step"]
     },
     {
-      id: 5,
+      id: 4,
       title: "Senior Floats",
       category: "Wood Working",
       description: "Designed, manufactured, and assembled a wood replica of the Apollo 11 Lunar Lander Module for Homecoming. ",
@@ -65,7 +65,7 @@ const EngineeringPortfolio = () => {
       cadFiles: []
     }, 
     {
-      id: 6,
+      id: 5,
       title: "Machine Shop Training (Milling Machine)",
       category: "Manufacture",
       description: "Designed and implemented a milling machine training program for members of the Gunn Robotics Team.",
@@ -76,7 +76,7 @@ const EngineeringPortfolio = () => {
       cadFiles: []
     },
     {
-      id: 7,
+      id: 6,
       title: "Trumpet Project",
       category: "Robotics",
       description: "Manufactured a trumpet-playing prosthesis.",

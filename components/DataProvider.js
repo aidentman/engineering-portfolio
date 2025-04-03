@@ -7,12 +7,23 @@ const DataContext = createContext();
 
 // Sample portfolio data - you would replace this with your actual projects
 const projects = [
+  {  
+  id: 0,
+  title: "In Progress: UR10e Simulation Project",
+  category: "Robotics",
+  description: "Creating a simulator for the UR10e (6-axis industrial robotic arm) using Simulink.",
+  fullDescription: "I am currently working toward building a functional a simulator for the UR10e (6-axis industrial robotic arm) using the Simscape (Simulink) multibody addon. I imported an assembly from SolidWorks, assigning mates and creating input connections between joints and ports to control each individual rotational axis. I connected a GameCube controller to the signal inputs using the vr controller input for interactive input. To verify the position/velocity outputs, I used my knowledge in Dynamics to derived mathematical relations between joint position/velocity to track the position and velocity of the end effector.",
+  images: ["UR10_Solidworks_Assembly.png", "UR10_Specs.jpg", "UR10_Math.jpg", "UR10_All_Blocks.png", "UR10_Button_Blocks.png", "UR10_Stick_Blocks.png", "UR10_Comp_Blocks.png", "UR10_Simscape_Assembly.png", "UR10_Calibration_Script.png", "UR10_Math_Model_Script.png"],
+  videos: ["UR10_Demo.mp4"],
+  // documents: ["GRT_2023_Technical_Binder.pdf", "GRT_2023_Impact_Booklet.pdf"],
+  // cadFiles: ["GRT_2023_Full_Robot_Assembly.step", "GRT_2023_Gripper_Assembly.step"]
+  },
   {
     id: 1,
     title: "In Progress: CNC Router",
     category: "Manufacture",
     description: "Designing and assembling a CNC Router from scratch.",
-    fullDescription: "Working with a small design team towards creating a fully functional CNC router from scratch.",
+    fullDescription: "Working with a small design team towards creating a fully functional CNC router from scratch, capable of milling wood and aluminum over a 59\"x40\"x4\" work area. We have a mechanical design assembled in Onshape and are currently determining electrical components.",
     images: ["CNC_Top.png", "CNC_Front.png", "CNC_Extrusions.jpg"],
     videos: [],
     documents: [],

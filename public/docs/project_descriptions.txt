@@ -1,0 +1,46 @@
+Descriptions for each of the projects:
+
+UR10e:
+    
+Description: Creating a simulator and control system for the UR10e (6-axis industrial robotic arm) using Simulink.
+Full Description: I am currently working toward building a functional a simulator for the UR10e (6-axis industrial robotic arm)
+using the Simscape (Simulink) multibody addon. I imported an assembly from SolidWorks, assigning mates and creating input connections
+between joints and ports to control each individual rotational axis. I connected a GameCube controller to the signal inputs 
+using the vr controller input for interactive input. To verify the position/velocity outputs, I used my knowledge in Dynamics 
+to derived mathematical relations between joint position/velocity to track the position and velocity of the end effector.
+
+CNC Router:
+
+Description: Designing and assembling a CNC Router from scratch.
+Full Description: Working with a small design team towards creating a fully functional CNC router from scratch. We have
+a mechanical design assembled in Onshape and are currently determining electrical components.
+
+GRT 2023:
+
+Description: Designed and manufactured the Gripper Mechanism for the 2023 FIRST Robotics Competition robot.
+Full Description: Leading a small design team, I worked on the development of the Gripper Mechanism for the 2023 FIRST 
+Robotics Competition robot. Our design features an aluminum frame, an imbedded color sensor for detecting the game piece 
+type, a combination of compliant wheels and compliant stars for fast intake, a constant-force spring for passive gripping, 
+a driving motor to increase gripping compression, and a seated camera for driver alignment and control.
+
+GRT 2022:
+
+Description: Designed an manufactured the Indexing Mechanism for the 2022 FIRST Robotics Competition robot.
+Full Description: Leading a small design team, I worked on the development of the indexing mechanism for the 2022 FIRST 
+Robotics Competition robot. Our design features an aluminum frame, a combination of color and IR sensors to detect the index 
+location of game pieces, custom roughtop rollers, polycarbonate walls, and callibrated compression for consistent vertical feeding.
+
+Floats: 
+Description: Designed, manufactured, and assembled a wood replica of the Apollo 11 Lunar Lander Module for Homecoming.
+Full Description: I worked with the Gunn 2023 Senior Class to design, manufacture, and assemble a wood replica of the 
+Apollo 11 Lunar Lander Module for our annual Homecoming Competition. Constructed out of 2x4 beams for the frame and thin painted
+particle board for the appearance. The design also features mylar film for the gold base, () paper and chicken wire for the propulsion. 
+
+Mill Training
+
+Description: Designed and implemented a milling machine training program for members of the Gunn Robotics Team.
+Full Description: Over the 2022-2023 academic year, I acted as Mill Lead for the Gunn Robotics Team. I personally 
+designed and instructed a mill operation curriculum, teaching team members how to operate the machine safely and 
+efficiently, supervising and advising use. I also designed “replication parts” assignments for students to exercise 
+these manufacturing skills.
+      
