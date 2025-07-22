@@ -42,8 +42,8 @@ const Footer = () => {
         <div className="mt-8 border-t border-gray-800 pt-6 text-sm text-gray-400 text-center">
           © {new Date().getFullYear()} Aiden Man. All rights reserved.
         </div>
-      </div>
-    </footer>
+                </div>
+      </footer>
   );
 };
 

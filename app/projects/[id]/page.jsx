@@ -26,17 +26,32 @@ export default function ProjectPage() {
 
   return (
     <div className="space-y-6">
-      <h2 className="text-3xl font-bold mb-6 text-gray-800">{project.title}</h2>
-
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="p-6">
           <div className="mb-4">
-            <span className="text-xs font-semibold bg-red-100 text-red-700 px-2 py-1 rounded">
+            <span className="text-base font-semibold bg-red-100 text-red-700 px-2 py-1 rounded">
               {project.category}
             </span>
-            <h3 className="text-2xl font-bold mt-2">{project.title}</h3>
+            <h3 className="text-3xl font-bold mt-2">{project.title}</h3>
             <p className="text-gray-700 mt-3">{project.fullDescription}</p>
           </div>
+
+    {/* Skills Used */}
+    {project.skills?.length > 0 && (
+      <div className="mt-6">
+        <h4 className="text-xl font-semibold mb-3">Skills Applied</h4>
+        <div className="flex flex-wrap gap-2">
+          {project.skills.map((skill, index) => (
+            <span
+              key={index}
+              className="bg-red-100 text-red-700 text-base font-medium px-3 py-1 rounded"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+    )}
 
           {/* Project Images */}
           {project.images?.length > 0 && (
