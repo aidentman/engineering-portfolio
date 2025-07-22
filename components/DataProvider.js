@@ -97,15 +97,17 @@ const projects = [
 const aboutContent = {
   name: "Aiden Man",
   title: "Mechanical Engineer",
-  bio: "I am currently an undergraduate student studying mechanical engineering at UC Berkeley. I am particularly interested in robotics, manufacture and materials.",
+  bio: "I am currently an undergraduate mechanical engineering student UC Berkeley, with extensive experience in CAD design and hands-on fabrication. I have demonstrated leadership in managing engineering projects and teams, with particular strength in design, fabrication, prototype development, and robotics. My career interests lie in robotics, manufacture, and materials.",
   education: [
-    "Mechanical Engineering at UC Berkeley (Expected Graduation: 2027)"
+    "B.S. in Mechanical Engineering, UC Berkeley (Expected Graduation: 2027)"
   ],
   skills: [
-    "Mechanical Design", "CAD", "Prototyping", 
-    "Ansys (FEA)  ", "Organizing/Leading Group Projects", "C++",
-    "Python", "MATLAB", "SolidWorks", "Onshape", 
-    "Hand Tools", "Manual Mill", "Manual Lathe"
+    "Onshape (CAD)", "Solidworks (CAD/FEA)", "Fusion 360 (CAD)", "Autodesk Inventor (CAD)", "Ansys (FEA/CFD)",
+    "C++", "Python", "MATLAB", 
+    "Hand Tools", "Manual Mill", "Manual Lathe", "3D Printing", "Soldering",
+    "Organizing/Leading Group Projects", "Prototyping", "Mechanical Design", "Fabrication", "Assembly"
+    
+    // "ASE (Python Library)", "Ovito", "LAMMPS", "Numpy", "Scipy.spatial", "matplotlib", "DFT"
   ],
   contact: {
     email: "aidentman06@gmail.com",
