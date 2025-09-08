@@ -6,7 +6,7 @@ const Footer = () => {
     links: {
       github: "https://github.com/aidentman",
       instagram: "https://www.instagram.com/aidenman_",
-      linkedin: "https://www.linkedin.com/in/aiden-man-48772b291/",
+      linkedin: "https://www.linkedin.com/in/aiden-man",
     }
   };
 
