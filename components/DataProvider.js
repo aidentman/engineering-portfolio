@@ -72,7 +72,7 @@ const projects = [
     id: 5,
     title: "2022 FIRST Robotics Competition (Rapid React)",
     category: "Robotics",
-    description: "Designed an manufactured the indexing mechanism for the 2022 FIRST Robotics Competition robot.",
+    description: "Designed and manufactured the indexing mechanism for the 2022 FIRST Robotics Competition robot.",
     fullDescription: "Leading a design team of 10+ members, I worked on the development of the indexing mechanism for the 2022 First Robotics Competition Robot. Our design features an aluminum frame, color sensors to detect the index location of game pieces, custom roughtop rollers, polycarbonate walls, and callibrated compression for consistent vertical feeding.",
     skills: ["CAD (Onshape)", "Mill Operation", "Lathe Operation", "Hand Tools", "Prototyping", "Design", "Manufacture", "Assembly", "Project Leadership", "Robotics"],
     images: ["DAEDALUS_2.jpg", "DAEDALUS_3.jpg", "DAEDALUS_4.jpg", "DAEDALUS_6.jpg", "DAEDALUS_1.jpg", "DAEDALUS_5.jpg", "DAEDALUS_Full_Robot_CAD.png","DAEDALUS_Internals_CAD.png"],
