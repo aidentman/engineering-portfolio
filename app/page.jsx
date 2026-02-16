@@ -23,7 +23,7 @@ export default function HomePage() {
           </div>
           <div className="md:w-1/2">
             <img 
-              src={`/images/${projects.find(p => p.id === 3)?.images[0]}`}
+              src={`/images/${projects.find(p => p.id === 0)?.images[0]}`}
               alt="Featured project" 
               className="w-full h-[300px] object-cover" 
             />
@@ -32,7 +32,7 @@ export default function HomePage() {
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {[3, 2, 4].map(id => {
+        {[0, 1, 2].map(id => {
           const project = projects.find(p => p.id === id);
           if (!project) return null; // safeguard if ID is not found
           return (

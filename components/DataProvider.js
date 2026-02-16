@@ -9,8 +9,33 @@ const DataContext = createContext();
 const projects = [
   {  
   id: 0,
+  title: "TAFLab",
+  category: "Research",
+  description: "Characterized micro-wind generators and developed a testing framework for evaluating their efficiency.",
+  fullDescription: "During the Fall 2025 semester, I served as an Undergraduate Researcher at the TAFLab under the supervision of Reza Alem and Arsh Khan. My research focused on the characterization of micro-wind generators, specifically establishing a testing framework to evaluate the efficiency of small-scale turbine generators. I conducted a comparative analysis of different motor topologies, including NEMA 17 and NEMA 23 stepper motors, to determine their viability for power generation. To isolate performance from wind variability, I utilized a high-torque drill to simulate consistent input speeds while measuring outputs. I designed and fabricated a custom rectification circuit to convert AC motor output into stable DC power, employing full-bridge rectifiers and smoothing capacitors. To capture data, I developed a Python-based Data Acquisition (DAQ) pipeline that interfaced with an Arduino microcontroller and an INA219 power sensor via I2C. Through rigorous sensor validation, I discovered a 53.097% inaccuracy in voltage readings due to signal noise, which led me to pivot to a current-squared power calculation (P = I^2R) using a known resistive load to ensure data fidelity. My findings highlighted the critical role of impedance matching in maximizing power yield, with the NEMA 23 motor showing a peak output of ~1500mW. I concluded the semester by developing a 3-phase bridge rectifier to expand this framework to Brushless DC (BLDC) motors.",
+  skills: ["Arduino", "Circuit Design", "I2C","Python", "Matplotlib"],
+  images: ["TAFLab_Callibration.jpg", "TAFLab_Circuit.jpg", "TAFLab_Power_Encoder.png", "TAFLab_Write_Data.png", "TAFLab_Graphs.png"],
+  // videos: ["UR10_Demo.mp4"],
+  documents: ["TAFLab_Final_Report.pdf"],
+  // cadFiles: ["GRT_2023_Full_Robot_Assembly.step", "GRT_2023_Gripper_Assembly.step"]
+  },
+  {  
+  id: 1,
+  title: "Jornada Group",
+  category: "Research",
+  description: "Investigated quasi-1D (q1D) structures as potential surrogates for 2D structures in training and validating machine-learned interatomic potentials (MLIPs).",
+  fullDescription: "During the summer of 2025, I served as an Undergraduate Researcher at Stanford University within the Jornada Group, under the guidance of PI Felipe H. da Jornada and mentors Johnathan Georgaras and Akash Ramdas. My research focused on investigating quasi-1D (q1D) structures as potential surrogates for 2D structures in the training and validation of machine-learned interatomic potentials (MLIPs). Specifically, I analyzed transition metal dichalcogenide bilayer configurations—including MoS2/WSe2 heterobilayers and MoS2 homobilayers across various twist angles. Utilizing the Pymoire package, I generated 48 distinct q1D and 2D structures across a range of 0 to 60 degrees. I then performed structural relaxations using trained MLIPs and visualized the resulting atomic trajectories with Ovito. To evaluate the fidelity of the q1D surrogates, I employed Python libraries (ASE, NumPy, SciPy) to conduct Voronoi and disregistry analyses, comparing positional reconstruction and Mean Displacement Error (MDE) between the q1D and 2D models. My findings indicated that significant structural reconstruction primarily occurs at twist angles near 0, 30, and 60, and that MDE remains consistent post-relaxation, with higher accuracy (lower MDE) observed near the 0 and 60 marks. I concluded this experience by presenting these findings to the full laboratory group.",
+  skills: ["Python", "NumPy", "SciPy", "Matplotlib", "ASE", "Ovito", "LAMMPS"],
+  //For images add pictures of Jornada/Disregistry Analysis/analyze.py
+  images: ["Q1D_2D.png", "Q1D_1D.png", "Q1D_Pymoire_Code.png", "Q1D_Voronoi_Code.png", "Q1D_JPlots.png", "Q1D_APlots.png", "Q1D_AGraphs.png"],
+  videos: ["Q1D_Relaxation.mp4", "Q1D_Relaxation_Side.mp4"],
+  documents: ["Q1D_Study.pdf", "Q1D_Structures.pdf"],
+  // cadFiles: ["GRT_2023_Full_Robot_Assembly.step", "GRT_2023_Gripper_Assembly.step"]
+  },
+  {  
+  id: 2,
   title: "UR10e Simulation Project",
-  category: "Robotics",
+  category: "Robotics/Simulation",
   description: "Created a model simulation for the UR10e robotic arm (6-axis industrial robotic arm) using Simulink.",
   fullDescription: "I built a simulator for the UR10e (6-axis industrial robotic arm) using the Simscape multibody addon in Simulink. I imported an assembly from SolidWorks, assigning mates and creating input connections between joints and ports to control each individual rotational axis. I connected a GameCube controller to the signal inputs using the VR Controller Input for interactive input. To verify the position and velocity outputs, I used my knowledge in dynamics to track the position and velocity of the end effector based on each joint position and velocity.",
   skills: ["MATLAB", "Simulink", "Simscape", "SolidWorks", "Dynamics"],
@@ -20,9 +45,9 @@ const projects = [
   // cadFiles: ["GRT_2023_Full_Robot_Assembly.step", "GRT_2023_Gripper_Assembly.step"]
   },
   {
-    id: 1,
+    id: 3,
     title: "CNC Router",
-    category: "Manufacture",
+    category: "Design/Manufacture",
     description: "Designed a CNC Router from scratch.",
     fullDescription: "Worked with a design team of 10+ members towards designing a fully functional CNC router from scratch, capable of milling wood and aluminum over a 59\"x40\"x4\" work area. We assembled the mechanical design in CAD software (Onshape), and are working toward confirming electronics and full assembly.",
     skills: ["CAD (Onshape)", "Project Leadership"], 
@@ -32,7 +57,7 @@ const projects = [
     cadFiles: []
   },
   {
-    id: 2,
+    id: 4,
     title: "2023 FIRST Robotics Competition (Charged Up)",
     category: "Robotics",
     description: "Designed and manufactured the gripper mechanism for the 2023 FIRST Robotics Competition robot.",
@@ -44,7 +69,7 @@ const projects = [
     // cadFiles: ["GRT_2023_Full_Robot_Assembly.step", "GRT_2023_Gripper_Assembly.step"]
   },
   {
-    id: 3,
+    id: 5,
     title: "2022 FIRST Robotics Competition (Rapid React)",
     category: "Robotics",
     description: "Designed an manufactured the indexing mechanism for the 2022 FIRST Robotics Competition robot.",
@@ -56,7 +81,7 @@ const projects = [
     // cadFiles: ["GRT_2022_Full_Robot_Assembly.step", "GRT_2022_Internals_Assembly.step"]
   },
   {
-    id: 4,
+    id: 6,
     title: "Senior Floats",
     category: "Wood Working",
     description: "Designed, manufactured, and assembled a wood replica of the Apollo 11 Lunar Lander Module for Homecoming. ",
@@ -68,7 +93,7 @@ const projects = [
     cadFiles: []
   }, 
   {
-    id: 5,
+    id: 7,
     title: "Machine Shop Training (Milling Machine)",
     category: "Manufacture",
     description: "Designed and implemented a milling machine training program for members of the Gunn Robotics Team.",
@@ -80,7 +105,7 @@ const projects = [
     cadFiles: []
   },
   {
-    id: 6,
+    id: 8,
     title: "Trumpet Project",
     category: "Robotics",
     description: "Manufactured a trumpet-playing prosthesis.",
