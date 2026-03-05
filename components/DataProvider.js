@@ -61,11 +61,11 @@ const projects = [
     title: "FIRST Robotics Competition (Charged Up)",
     category: "Robotics",
     description: "Designed and manufactured the gripper mechanism for the FIRST Robotics Competition robot.",
-    fullDescription: "Leading a design team of 10+ members, I worked on the development of the gripper mechanism for the 2023 FIRST Robotics Competition robot. Our design features an aluminum frame, an imbedded color sensor for detecting the game piece type, a combination of compliant wheels and compliant stars for fast intake, a constant-force spring for passive gripping, a driving motor to increase gripping compression, and a seated camera for driver alignment and control.",
+    fullDescription: "Leading a design team of 10+ members, I worked on the development of the gripper mechanism for the FIRST Robotics Competition robot. Our design features an aluminum frame, an imbedded color sensor for detecting the game piece type, a combination of compliant wheels and compliant stars for fast intake, a constant-force spring for passive gripping, a driving motor to increase gripping compression, and a seated camera for driver alignment and control.",
     skills: ["CAD (Onshape)", "Mill Operation", "Lathe Operation", "Hand Tools", "Prototyping", "Design", "Manufacture", "Assembly", "Project Leadership", "Robotics"],
     images: ["VERMILION_Front.jpg", "VERMILION.png"],
     videos: ["VERMILION_Gripper_Test.mov", "VERMILION_Drive_Test.MOV"],
-    documents: ["GRT_2023_Technical_Binder.pdf", "GRT_2023_Impact_Booklet.pdf"],
+    documents: ["GRT_Vermilion_Technical_Binder.pdf", "GRT_Vermilion_Impact_Booklet.pdf"],
     // cadFiles: ["GRT_2023_Full_Robot_Assembly.step", "GRT_2023_Gripper_Assembly.step"]
   },
   {
@@ -97,7 +97,7 @@ const projects = [
     title: "Machine Shop Training (Milling Machine)",
     category: "Manufacture",
     description: "Designed and implemented a milling machine training program for members of the Gunn Robotics Team.",
-    fullDescription: "Over the 2022-2023 academic year, I acted as Mill Lead for the Gunn Robotics Team. I personally designed and instructed a mill operation curriculum, teaching team members how to operate the machine safely and efficiently, supervising and advising use. I also designed \"replication parts\" assignments for students to exercise these manufacturing skills.",
+    fullDescription: "I acted as Mill Lead for the Gunn Robotics Team. I personally designed and instructed a mill operation curriculum, teaching team members how to operate the machine safely and efficiently, supervising and advising use. I also designed \"replication parts\" assignments for students to exercise these manufacturing skills.",
     skills: ["Mill Operation", "Curriculum Design", "Teaching/Training", "Manufacture"],
     images: ["GRT-2023-Rep-Part(Rookie).jpeg", "GRT-2023-Rep-Part(Vet).jpeg"],
     videos: [],
