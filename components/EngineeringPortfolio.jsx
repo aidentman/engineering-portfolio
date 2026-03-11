@@ -11,7 +11,7 @@ const EngineeringPortfolio = () => {
   const projects = [
     {
       id: 0,
-      title: "In Progress: UR10e Simulation Project",
+      title: "UR10e Simulation Project",
       category: "Robotics",
       description: "Created a simulator for the UR10e (6-axis industrial robotic arm) using Simulink.",
       fullDescription: "Created a simulator for the UR10e (6-axis industrial robotic arm) using Simulink. Connected a GameCube controller for interactive input. Derived mathematical relations to mathematically track the position and velocity ",
@@ -22,9 +22,9 @@ const EngineeringPortfolio = () => {
     },
     {
       id: 1,
-      title: "In Progress: CNC Router",
+      title: "CNC Router",
       category: "Manufacture",
-      description: "Designing and assembling a CNC Router from scratch.",
+      description: "Designing  a CNC Router from scratch.",
       fullDescription: "Working with a small design team towards creating a fully functional CNC router from scratch. We have a mechanical design assembled in Onshape and are currently determining electrical components.",
       images: ["CNC_Top.png", "CNC_Front.png", "CNC_Extrusions.jpg"],
       // videos: [],
