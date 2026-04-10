@@ -13,8 +13,8 @@ const projects = [
     category: "Automotive",
     description: "Design, manufacture, testing, and validation for the High-voltage cooling system for Formula Electric car.",
     fullDescription: "As a member of the Formula SAE team, I led the design and validation of a motor and inverter cooling system to mitigate critical high-voltage powertrain overheating. I initially developed a transient thermal model in Python utilizing the effectiveness-NTU method to simulate heat transfer and predict system behavior.  To physicalize and validate these models, I engineered a dedicated test bench, meticulously sourcing necessary fluid instrumentation including flow, pressure, and temperature sensors. For the vehicle's physical packaging, I integrated complex fluid fittings and tubing conversions within SolidWorks, modeling the complete cooling assemblies and fluid routing lines. Furthermore, I modeled mounting tabs and welding jigs to optimize component placement and ensure precise clearance around critical powertrain subsystems. To maximize heat rejection, I designed and manufactured a custom 1/16\" aluminum radiator fan shroud, which successfully increased airflow through the heat exchanger by 42%.  Finally, I developed custom Python software for thermistor calibration and Logarithmic Mean Temperature Difference (LMTD) analysis, automating our thermal performance tracking and ensuring high sensor fidelity throughout our testing phases.",
-    images: ["FEB_CAD1.png", "FEB_CAD2.png", "FEB_CAD3.png", "FEB_CAD4.png", "FEB_CAD5.png", "FEB_Jig2.jpg", "FEB_Shroud_parts.jpg", "FEB_Circuit.jpg", "FEB_Temp.png", "FEB_FinalCFM.png", "FEB_Rainbow.png", "FEB_Split.png", "FEB_Test.png"],
-    videos: [],
+    images: ["FEB_CAD5.png", "FEB_Buck2.jpg", "FEB_CAD1.png", "FEB_CAD2.png", "FEB_CAD3.png", "FEB_CAD4.png",  "FEB_Shroud_Parts.jpg", "FEB_Circuit.jpg", "FEB_Temp.png", "FEB_FinalCFM.png", "FEB_Rainbow.png", "FEB_Split.png", "FEB_Test.png"],
+    videos: ["FEB_Buck.mp4"],
   },
   {  
   id: 0,
