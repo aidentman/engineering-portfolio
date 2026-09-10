@@ -7,14 +7,27 @@ const DataContext = createContext();
 
 // Sample portfolio data - you would replace this with your actual projects
 const projects = [
-    {
+  {
     id: 10,
     title: "In Progress: Formula Electric at Berkeley",
     category: "Automotive",
     description: "Design, manufacture, testing, and validation for the High-voltage cooling system for Formula Electric car.",
     fullDescription: "As a member of the Formula SAE team, I led the design and validation of a motor and inverter cooling system to mitigate critical high-voltage powertrain overheating. I initially developed a transient thermal model in Python utilizing the effectiveness-NTU method to simulate heat transfer and predict system behavior.  To physicalize and validate these models, I engineered a dedicated test bench, meticulously sourcing necessary fluid instrumentation including flow, pressure, and temperature sensors. For the vehicle's physical packaging, I integrated complex fluid fittings and tubing conversions within SolidWorks, modeling the complete cooling assemblies and fluid routing lines. Furthermore, I modeled mounting tabs and welding jigs to optimize component placement and ensure precise clearance around critical powertrain subsystems. To maximize heat rejection, I designed and manufactured a custom 1/16\" aluminum radiator fan shroud, which successfully increased airflow through the heat exchanger by 42%.  Finally, I developed custom Python software for thermistor calibration and Logarithmic Mean Temperature Difference (LMTD) analysis, automating our thermal performance tracking and ensuring high sensor fidelity throughout our testing phases.",
-    images: ["FEB_CAD5.png", "FEB_Buck2.jpg", "FEB_CAD1.png", "FEB_CAD2.png", "FEB_CAD3.png", "FEB_CAD4.png",  "FEB_Shroud_Parts.jpg", "FEB_Circuit.jpg", "FEB_Temp.png", "FEB_FinalCFM.png", "FEB_Rainbow.png", "FEB_Split.png", "FEB_Test.png"],
+    images: ["FEB_Cooling_Left.jpg", "FEB_Cooling_Right.jpg", "FEB_Cooling_Front.jpg", "FEB_Cooling_Backup.jpg","FEB_Fan_Shroud.jpg", "FEB_Shroud_Parts.jpg", "FEB_CAD1.png", "FEB_CAD2.png", "FEB_CAD3.png", "FEB_CAD4.png", "FEB_Loop_Config.png", "FEB_Buck2.jpg", "FEB_CAD5.png", "FEB_Circuit.jpg",
+      //"FEB_Temp.png", "FEB_FinalCFM.png", "FEB_Rainbow.png", "FEB_Split.png", "FEB_Test.png", 
+      "FEB_Thermistor_Calibration.png", "FEB_UA_Plots.png", "FEB_Tuned_UA_Plots.png", "FEB_Endurance_Final.png",
+      //"FEB_CAD_Buck.png"
+    ],
     videos: ["FEB_Buck.mp4"],
+  },
+  {
+    id: 9,
+    title: "ME100 Project: RC Fire Truck",
+    category: "Robotics",
+    description: "Designed and built a dual-mode remote-controlled firefighting rover with autonomous collision-avoidance safety override.",
+    fullDescription: "As part of a 3-person team in ME100, I helped design and build an RC rover concept for firefighting support, aimed at reducing human exposure to extreme heat and structural hazards during fire response. The vehicle featured a dual-mode control system: a remote-operated drive and turret-aiming mode, paired with an autonomous safety override that could act independently of the operator. I designed and fabricated the chassis in SolidWorks, integrating a servo-actuated water turret (180° range of motion), water pump, ultrasonic sensor, and IMU into a compact drivetrain platform. On the electronics side, I developed the ESP32 firmware, using a DRV8833 H-bridge for dual-motor drive control, an NMOS gate to enable PWM actuation of the water pump, and a MicroPython servo module for direct turret positioning. I implemented the autonomous safety logic, using real-time ultrasonic distance readings to automatically brake the drivetrain within 10 cm of an obstacle, and built the Blynk-based mobile interface for joystick driving, pump control, turret aiming, and live sensor telemetry. One of the more interesting problems I solved was electromagnetic interference between the water pump and servo motor, both inductive loads sharing a power system; I resolved it by isolating motor grounding to a single reference point and adding suppression capacitors and a flyback diode. I also redesigned the power distribution after our initial single-USB-power approach proved insufficient, splitting actuators onto dedicated Li-Po supplies.",
+    images: ["ME100_Front.jpg", "ME100_Top.jpg", "ME100_Assembled_Case.jpg", "ME100_3D_Print.jpg"],
+    videos: ["ME100_Demo.mov", "ME100_Drive.mov", "ME100_Camera.mov", "ME100_Servo.mov"],
   },
   {  
   id: 0,
