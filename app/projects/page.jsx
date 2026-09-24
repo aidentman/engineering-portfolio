@@ -22,7 +22,7 @@ export default function ProjectsPage() {
             />
             
             <div className="p-4">
-              <span className="text-xs font-semibold bg-red-100 text-red-700 px-2 py-1 rounded">
+              <span className="text-xs font-semibold bg-blue-100 text-blue-700 px-2 py-1 rounded">
                 {project.category}
               </span>
               <h3 className="text-xl font-bold mt-2">{project.title}</h3>
@@ -32,7 +32,7 @@ export default function ProjectsPage() {
               {/* Link to the individual project page */}
               <Link
                 href={`/projects/${project.id}`}  // Use dynamic route matching
-                className="mt-4 text-red-700 font-medium hover:text-red-800 inline-block"
+                className="mt-4 text-blue-600 font-medium hover:text-blue-800 inline-block"
               >
                 View Details →
               </Link>

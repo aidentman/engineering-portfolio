@@ -10,7 +10,7 @@ export default function AboutPage() {
     <div className="bg-white rounded-lg shadow-lg p-8">
       <div className="md:flex">
         <div className="md:w-1/3 mb-6 md:mb-0">
-          <div className="rounded-full overflow-hidden w-48 h-48 mx-auto border-4 border-red-300">
+          <div className="rounded-full overflow-hidden w-48 h-48 mx-auto border-4 border-blue-300">
             <img 
               src="/images/pfp.jpg" 
               alt="Profile" 
@@ -20,7 +20,7 @@ export default function AboutPage() {
         </div>
         <div className="md:w-2/3">
           <h2 className="text-3xl font-bold text-gray-800">{aboutContent.name}</h2>
-          <h3 className="text-xl text-red-700 mb-4">{aboutContent.title}</h3>
+          <h3 className="text-xl text-blue-700 mb-4">{aboutContent.title}</h3>
           <p className="text-gray-700 mb-6">{aboutContent.bio}</p>
 
           <div className="mb-6">

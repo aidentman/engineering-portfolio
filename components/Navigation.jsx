@@ -13,7 +13,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="bg-red-800 text-white p-4">
+    <nav className="bg-blue-900 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-2xl font-bold">
           <Link href="/about" className="px-2 py-1">
