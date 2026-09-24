@@ -32,7 +32,7 @@ export default function HomePage() {
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {[1, 2, 4].map(id => {
+        {[10, 1, 2].map(id => {
           const project = projects.find(p => p.id === id);
           if (!project) return null; // safeguard if ID is not found
           return (
